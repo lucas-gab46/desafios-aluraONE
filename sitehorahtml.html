@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas-vindas ao Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    alert('Boas-vindas ao site');
+
+    var nome = prompt('Qual é seu nome?');
+    var idade = prompt('Qual é sua idade?');
+
+    if (nome === null || nome === "" || idade === null || idade === "") {
+        alert('Erro! Preencha todos os campos');
+    } else {
+        idade = parseInt(idade); 
+
+        if (idade >= 18) {
+            alert('Pode tirar a habilitação!');
+        } else {
+            alert('Você é menor de idade. Não pode tirar a habilitação.');
+        }
+
+        var idadeExemplo = 25;
+        var numeroDeVendas = 50;
+        var saldoDisponivel = 1000;
+
+        alert('Mensagem de Erro: Isso é apenas um exemplo!');
+    }
+</script>
+
+</body>
+</html>
